@@ -532,8 +532,6 @@ app.get("/guess/:word", (req, res) => {
   res.json(result);
 });
 
-app.use(express.static("public"));
-
 app.listen(3000, () => {
   console.log("Connected!");
 });
